@@ -15,6 +15,8 @@ Vagrant.configure("2") do |config|
     config.vm.define "db01" do |db|
         db.vm.hostname = "db01"
         db.vm.box = "hashicorp/bionic64"
+        db.memory = 2048
+        db.cpus = 2
     end
 
   end
