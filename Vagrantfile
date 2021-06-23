@@ -13,8 +13,8 @@ Vagrant.configure("2") do |config|
     end
 
     config.vm.define "db01" do |db|
-        web.vm.hostname = "db01"
-        web.vm.box = "hashicorp/bionic64"
+        db.vm.hostname = "db01"
+        db.vm.box = "hashicorp/bionic64"
     end
 
   end
