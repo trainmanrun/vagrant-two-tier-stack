@@ -9,4 +9,4 @@ vagrant up
 vagrant ssh web01 (or web02 or db01)
 ```
 
-Updated the db01 to have 2 cores and 2 GB of RAM
+Updated the machines to have 2 cores and 2 GB of RAM

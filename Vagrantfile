@@ -1,5 +1,10 @@
 Vagrant.configure("2") do |config|
-   
+
+    config.vm.provider "virtualbox" do |v|
+        v.memory = 2048
+        v.cpus = 2
+      end
+
     config.vm.define "web01" do |web|
       web.vm.hostname = "web01"
       web.vm.box = "hashicorp/bionic64"
@@ -15,8 +20,7 @@ Vagrant.configure("2") do |config|
     config.vm.define "db01" do |db|
         db.vm.hostname = "db01"
         db.vm.box = "hashicorp/bionic64"
-        db.memory = 2048
-        db.cpus = 2
+
     end
 
   end
